@@ -1,0 +1,25 @@
+.color-example {
+    color: darkblue;
+    background-color: orangered;
+    border: 5px solid black;
+}
+.header-example {
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: chartreuse;
+
+}
+.list-example {
+    color: rebeccapurple;
+    list-style-type: "\1F44D";
+}
+.text-example{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.div-example {
+    background-color:cornflowerblue;
+    border: 3px dotted;
+}
