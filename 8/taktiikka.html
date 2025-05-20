@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>YkkösMatti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/kuvat/favicon.png" type="image/png">
+</head>
+<body>
+
+<div class="position-fixed top-0 start-0 h-100 bg-dark px-3 con" style="width: 200px; padding-top: 300px;">
+
+  <ul class="nav flex-column mt-4">
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#Taktiikka&Strategia">Taktiikka & Strategia</a></li>
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#Notaatio">Notaatio</a></li>
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#Taktisetteemat">Taktiset teemat</a></li>
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#haarukka">Haarukka</a></li>
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#paljastusshakki">Paljastusshakki</a></li>
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#kiinnitys">Kiinnitys</a></li>
+    <li class="nav-item"><a class="nav-link sidebar-link" href="#strategiset-periaatteet">Strategiset periaatteet</a></li>
+
+  </ul>
+</div>
+
+<header class="sticky-top bg-light">
+  <div class="text-center py-3">
+    <img src="kuvat/logo.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
+  </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Etusivu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="saannot.html">Säännöt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-warning" href="taktiikka.html">Taktiikka & Strategia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="container p-5" id="Taktiikka&Strategia">
+  <h1>
+    Taktiikka & Strategia
+  </h1>
+  <p>
+    Tällä sivulla käsitellään yleisimpiä shakin taktisia ja strategisia periaatteita.
+    Shakissa taktiikkaa on se, että nappulat ovat lyöntikontaktissa tai nappula uhataan siirtää ruutuun,
+    jossa se uhkaa voittaa materiaalia tai tehdä shakkimatin. Taktiikka on siis hyökkäys tai puolustusideoiden
+    toteuttamista, kun taas strategia on aseman rakentamista ja hyökkäyksen tai puolustuksen valmistelua.
+  </p>
+</div>
+
+<blockquote class="blockquote text-center">
+  <p class="mb-0">The tactician knows what to do when there is something to do; whereas the strategian knows what to do when there is nothing to do.</p>
+  <footer class="blockquote-footer mt-1">Gerald Abrahams</footer>
+</blockquote>
+
+<div class="container p-5" id="Notaatio">
+<h2>
+  Notaatio
+</h2>
+<p>
+  Shakissa käytetään yleisesti algebraattista notaatiota, jossa jokainen ruutu nimetään kirjaimella ja numerolla 
+  ja siirrot merkitään nappulan kirjaimella sekä sen kohderuudulla. 
+<p>
+  Shakin siirrot voidaan esittää kahdella yleisellä tavalla: 
+  suomalaisella ja kansainvälisellä (englanninkielisellä) merkinnällä. 
+  Kansainvälinen merkintä on yleisesti käytössä verkossa, turnauksissa ja kirjoissa.
+</p>
+<p>
+  Tällä sivulla käytämmä esimerkeissä kansainvälistä lyhyttä merkintätapaa.
+</p>
+
+<table class="table table-bordered text-center mt-4">
+  <thead >
+    <tr>
+      <th>Nappula</th>
+      <th>Suomalainen</th>
+      <th>Kansainvälinen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ratsu</td>
+      <td>R</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Lähetti</td>
+      <td>L</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>Torni</td>
+      <td>T</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>Kuningatar</td>
+      <td>D</td>
+      <td>Q</td>
+    </tr>
+    <tr>
+      <td>Kuningas</td>
+      <td>K</td>
+      <td>K</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+   Huomaa, että nappuloiden siirrot merkitään molemmissa järjestelmissä samalla tavalla – erot koskevat vain nappulan kirjainta.
+</p>
+
+  <table class="table table-bordered text-center mt-4">
+    <thead>
+      <tr>
+        <th>Merkintä</th>
+        <th>Selitys</th>
+        <th>Esimerkki</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>x</code></td>
+        <td>Lyönti</td>
+        <td><code>Nxf3</code> – ratsu lyö f3</td>
+      </tr>
+      <tr>
+        <td><code>+</code></td>
+        <td>Shakki</td>
+        <td><code>Qd8+</code> – shakki kuningattarella</td>
+      </tr>
+      <tr>
+        <td><code>#</code></td>
+        <td>Shakkimatti</td>
+        <td><code>Qg7#</code> – kuningatar tekee matin</td>
+      </tr>
+      <tr>
+        <td><code>0–0</code></td>
+        <td>Lyhyt linnoitus</td>
+        <td>Kuningas siirtyy kaksi ruutua oikealle</td>
+      </tr>
+      <tr>
+        <td><code>0–0–0</code></td>
+        <td>Pitkä linnoitus</td>
+        <td>Kuningas siirtyy kaksi ruutua vasemmalle</td>
+      </tr>
+      <tr>
+        <td><code>=Q</code></td>
+        <td>Korotus kuningattareksi</td>
+        <td><code>e8=Q</code> – sotilas korottuu</td>
+      </tr>
+      <tr>
+        <td><code>e4</code></td>
+        <td>Sotilaan siirto</td>
+        <td>Sotilas siirtyy ruutuun e4</td>
+      </tr>
+      <tr>
+        <td><code>exd5</code></td>
+        <td>Sotilaan lyönti</td>
+        <td>e-linjan sotilas lyö d5</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered text-center mt-4">
+    <thead>
+      <tr>
+        <th>Tyyli</th>
+        <th>Merkintä</th>
+        <th>Selitys</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Lyhyt</td>
+        <td><code>e4</code></td>
+        <td>Sotilas siirtyy ruutuun e4</td>
+      </tr>
+      <tr>
+        <td>Pitkä</td>
+        <td><code>e2–e4</code></td>
+        <td>Lähtö- ja kohderuutu näkyvissä</td>
+      </tr>
+      <tr>
+        <td>Lyhyt</td>
+        <td><code>exd5</code></td>
+        <td>e-linjan sotilas lyö d5</td>
+      </tr>
+      <tr>
+        <td>Pitkä</td>
+        <td><code>e4xd5</code></td>
+        <td>Lähtö- ja kohderuutu + lyöntimerkki</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+<div class="container p-5" id="Taktisetteemat">
+  <h2>
+    Taktiset teemat
+  </h2>
+  <p>
+    Seuraavat taktiikat ovat shakissa toistuvia teemoja, joita pelaajat hyödyntävät materiaalin voittamiseksi tai 
+    parantaakseen asemaansa. Näiden tunnistaminen on tärkeää menestymisen kannalta. 
+  </p>
+  <h3 id="haarukka">
+    Haarukka
+  </h3>
+  <p>
+    Haarukka on tilanne, jossa yksi nappula uhkaa kahta tai useampaa vastustajan nappulaa samanaikaisesti. 
+    Tämä voi johtaa materiaalin voittamiseen, koska vastustaja ei voi pelastaa kaikkia nappuloita.
+  </p>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/haarukka1.png" alt="Esimerkki haarukasta" class="img-fluid mb-2">
+      <figcaption >
+        Valkean siirto. Valkea voi ottaa tasapelin pelaamalla Ne7+ haarukoiden kuninkaan ja kuningattaren. 
+        Kun valkea lyö kuningattaren peli päättyy tasapeliin koska pelkällä kuninkaalla ja ratsulla ei voi tehdä shakkimattia.
+        Tämä on kuitenkin paras ratkaisu koska muuten mustalla on voittoasema.
+      </figcaption>
+    </div>
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/haarukka2.png" alt="Esimerkki haarukasta" class="img-fluid mb-2">
+      <figcaption>
+        Mustan siirto. Valkea on pelannut Nc3+ ja musta voi vastata pelaamalla Kd4, haarukoiden ratsun ja lähetin, jonka jälkeen mustalla on voittoasema.
+      </figcaption>
+    </div>
+        <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/haarukka3.png" alt="Esimerkki haarukasta" class="img-fluid mb-2">
+      <figcaption>
+        Haarukasta voi myös paeta. Valkean siirto. Musta on haarukoitunut valkean tornit, 
+        mutta valkea voi pelata Rcd1+ jolloin musta joutuu pelaamaan Ke7 ja valkea pelastaa toisen torninsa pelaamalla
+        Rge1. Asema säilyy tasaisena.
+      </figcaption>
+    </div>
+  </div>
+</div>
+
+<div class="container p-5" id="paljastusshakki">
+  <h3>Paljastusshakki</h3>
+  <br><br>
+  <blockquote class="blockquote text-center">
+    <p class="mb-0">Discovered check is the dive-bomber of the chessboard.</p>
+    <footer class="blockquote-footer mt-1">Reuben Fine</footer>
+  </blockquote>
+  <p>
+    Paljastusshakki on taktiikka, jossa yksi nappula siirtyy tieltä pois ja sen takana oleva nappula shakkaa kuningasta.
+  </p>
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/paljastus1.png" alt="Esimerkki paljastusshakista" class="img-fluid mb-2">
+      <figcaption>
+        Valkean siirto. Valkea pelaa c8=Q+ paljastaen kuninkaan shakille. Musta ei voi lyödä korotettua nappulaa pois, joten valkealla on torni enemmän.
+      Valkean voittoaasema.
+      </figcaption>
+    </div>
+    
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/paljastus2.png" alt="Esimerkki paljastusshakista" class="img-fluid mb-2">
+      <figcaption>
+        Mustan siirto. Valkean lähetti on tullut uhkaamaan mustan ratsua mutta musta vastaa pelaamalla Ke5+.
+        Valkea menettää lähetin ja mustalla on voittoaasema.
+      </figcaption>
+    </div>
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/paljastus3.png" alt="Esimerkki paljastusshakista" class="img-fluid mb-2">
+      <figcaption>
+        Valkean siirto. Musta on pelannut kohtalokkaasti d5 ja valkea voi lyödä mustan sotilaan ohesta.
+        Valkea tulee saamaan pitkälle edenneen vapaa sotilaan ja aktiivisen upseeripelin ansiosta vahvan hyökkäyksen avointa mustan
+        kuningasta vastaan. Valkealla on voittoasema.
+      </figcaption>
+    </div>
+  </div>
+</div>
+
+<div class="container p-5" id="kiinnitys">
+  <h3>Kiinnitys</h3>
+  <br><br>
+  <blockquote class="blockquote text-center">
+    <p class="mb-0">The defensive power of a pinned piece is only imaginary.</p>
+    <footer class="blockquote-footer mt-1">Aron Nimzowitsch</footer>
+  </blockquote>
+  
+  <p>
+    Kiinnitys on tilanne, jossa nappula ei voi liikkua, koska sen siirtäminen paljastaisi arvokkaamman nappulan uhkaukselle. 
+    Tällaisessa tilanteessa uhattu nappula "kiinnitetään paikalleen", eikä voi tehokkaasti puolustautua tai vaihtaa asemaa.
+  </p>
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/kiinnitys1.png" alt="Esimerkki kiinnityksestä" class="img-fluid mb-2">
+      <figcaption>
+        Mustan siirto. Valkea on lyönyt mustan ratsun ruudusta b4. Valkean lähetti on kuitenkin kiinnitetty
+        ja musta voittaa kuningattaren siirrolla Qxb4. Mustan voittoasema.
+      </figcaption>
+    </div>
+
+    <div class="col-md-4">
+      <img src="/kuvat/taktiikka&strategia/kiinnitys2.png" alt="Toinen esimerkki kiinnityksestä" class="img-fluid mb-2">
+      <figcaption>
+        Mustan lähetti on kiinnittänyt valkean ratsun kuningattaren taakse. Vaikka ratsu ei voi liikkua, valkea voi suojautua pelaamalla f3.
+      </figcaption>
+    </div>
+  </div>
+</div>
+
+<div class="container p-5" id="strategiset-periaatteet">
+
+  <h3>Strategiset periaatteet</h3><br><br>
+
+      <blockquote class="blockquote text-center">
+    <p class="mb-0">Some consider that when I play I am excessively cautious, but it seems to me that the question may be a different one. 
+                  I try to avoid chance. Those who rely on chance should play cards or roulette. Chess is something quite different.</p>
+    <footer class="blockquote-footer mt-1">Tigran Petrosian</footer>
+  </blockquote>
+  
+  <p>
+    Seuraavat strategiset periaatteet ovat yleisiä ohjeita, jotka auttavat pelaajia saamaan hyvän aseman ja menestymään pelissä.
+    Nämä periaatteet eivät ole ehdottomia sääntöjä, siirtojen hyödyllisyys riippuu aina asemasta, mutta ne tarjoavat hyödyllisiä suuntaviivoja pelin aikana ja aloittelevat pelaajat varmasti hyötyvät niistä.
+  </p>
+  <ul>
+    <li>Pyri hallitseman keskustaruutuja: e4, e5, d4, d5.</li>
+    <li>Kehitä upseerit nopeasti peliin.</li>
+    <li>Suojaa kuningasta: linnoita ajoissa ja pidä huoli että kuningas ei joudu vakavan hyökkäyksen alle.</li>
+    <li>Älä siirrä samaa nappulaa useaan kertaan avauksessa.</li>
+    <li>Älä vie kuningatarta liian aikaisin peliin.</li>
+    <li>Valloita avoimet pystyrivit torneilla ennen vastustajaa</li>
+    <li>Mieti tarkkaan ketä vaihdot hyödyttävät.</li>
+    <li>Siirron perusteluksi ei riitä se, että se on helppo tehdä.</li>
+
+  </ul>
+  <br><br>
+      <blockquote class="blockquote text-center">
+    <p class="mb-0">Chess, like love, like music, has the power to make men happy.</p>
+    <footer class="blockquote-footer mt-1">Siegbert Tarrasch</footer>
+  </blockquote>
+</div>
+
+
+<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <img src="kuvat/logo.png" alt="Logo" width="100" height="100">
+    </a>
+    <span class="text-muted">© 2025 YkkösMatti</span>
+  </div>
+
+ <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+  <li class="ms-3">
+    <a class="text-muted" href="https://www.facebook.com" target="_blank">
+      <i class="fab fa-facebook fa-lg"></i>
+    </a>
+  </li>
+  <li class="ms-3">
+    <a class="text-muted" href="https://instagram.com" target="_blank">
+      <i class="fab fa-instagram fa-lg"></i>
+    </a>
+  </li>
+</ul>
+
+</footer>
+</body>
+</html>
