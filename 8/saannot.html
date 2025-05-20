@@ -12,44 +12,60 @@
 </head>
 <body>
 
-<div class="position-fixed top-0 start-0 h-100 bg-dark px-3" style="width: 200px; padding-top: 300px;">
+<div class="position-fixed top-0 start-0 h-100 bg-dark px-3 d-none d-md-block" style="width: 200px; padding-top: 300px;">
 
-  <ul class="nav flex-column mt-4">
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#pelintavoite">Pelin tavoite</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#shakkilauta">Shakkilauta</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#pelinappulat">Pelinappulat</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#sotilas">Sotilas</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#ratsu">Ratsu</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#lahetti">Lähetti</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#torni">Torni</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#kuningatar">Kuningatar</a></li>
-    <li class="nav-item"><a class="nav-link sidebar-link" href="#kuningas">Kuningas</a></li>
-  </ul>
+<ul class="nav flex-column">
+  <li class="nav-item">
+    <a class="nav-link sidebar-link" aria-current="page" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link sidebar-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link sidebar-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
 </div>
 
-<header class="sticky-top bg-light">
-  <div class="text-center py-3">
+<header class="sticky-top bg-dark">
+    <div class="text-center py-3 bg-light">
     <img src="kuvat/logo.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
   </div>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+  <div class="container-fluid">
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid justify-content-center">
-      <ul class="navbar-nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Etusivu</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-warning" href="saannot.html">Säännöt</a>
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="taktiikka.html">Taktiikka & Strategia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 </header>
 
     
