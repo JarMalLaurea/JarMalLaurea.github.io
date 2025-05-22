@@ -26,10 +26,11 @@
   border: none;
 }
 /* yläpalkin alasvetolaatikko */
-.dropdown-item:hover {
-  background-color: #D4AF37;
-  color: black;
+.dropdown-menu .dropdown-item:hover {
+  background-color: #D4AF37 !important;
+  color: black !important;
 }
+
 /* keskittää sivun kun painaa linkkiä */
 [id] {
   scroll-margin-top: 250px; 
