@@ -1,0 +1,41 @@
+
+/* yläpalkki */
+.navbar-dark .navbar-nav .nav-link {
+  color: #D4AF37;
+}
+/* yläpalkin hover */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff; 
+  text-decoration: underline; 
+}
+/* aktiivinen sivu */
+.navbar-dark .navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #ffffff;
+}
+/* karuselli */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    background-color: #D4AF37;
+    border-radius: 50%;
+}
+/* huomio laatikko */
+.custom-alert {
+  background-color: #D4AF37;
+  color: #000; 
+  border: none;
+}
+/* yläpalkin alasvetolaatikko */
+.dropdown-item:hover {
+  background-color: #D4AF37;
+  color: black;
+}
+/* keskittää sivun kun painaa linkkiä */
+[id] {
+  scroll-margin-top: 250px; 
+}
+/* taulukko */
+.table thead th {
+  background-color: #212529;
+  color: #D4AF37;
+}
